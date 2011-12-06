@@ -1,0 +1,40 @@
+{
+  "name": "node-bot",
+  "description": "Node.js implementation of Extract Widget bot using node-dom and node-gadgets, retrieves gadgets and elements from a web page matching given criterias",
+  "version": "0.1.0",
+  "homepage": "http://www.infonais.fr",
+  "keywords": [
+		"bot",
+		"gadget",
+		"widget",
+		"crawler",
+        "dom",
+		"html",
+		"js",
+		"style",
+		"css",
+        "w3c",
+        "javascript",
+		"ajax"
+  ],
+  "maintainers": [
+      {
+          "name": "Aymeric Vitte"
+      }
+  ],
+  "contributors": [
+  ],
+  "repository": {
+    "url": ""
+  },
+  "licenses": [
+      {
+          "type": "MIT"
+      }
+  ],
+  "author": "Aymeric Vitte <aymeric2@infonais.fr> (http://www.infonais.fr)",
+  "main": "./lib/bot.js",
+  "engines": {
+    "node": "*"
+  }
+}
