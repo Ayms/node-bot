@@ -72,7 +72,7 @@ http://myserver:myport/getelements?name=nike_shoes&search='nikestore nike lebron
 
 Example with encoded parameters to retrieve the price of "lebron9" shoes on nike store :
 
-http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%E2%82%AC
+http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC
 
 To call it from a script :
 
@@ -116,5 +116,7 @@ See https://github.com/Nais/node-gadgets/ documentation for more details.
 ## Tests :
 
 Naïs server : http://213.246.53.127:1341/getelements?params
+
+http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC
 
 See tests.txt in ./test
