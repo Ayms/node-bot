@@ -85,7 +85,7 @@ To call it from a script :
 
 	xscript.onload or onreadystatechange --> do what you have to do with the output
 ````
-Output format (see more details below) : nike_shoes.gadgets=(Array containing the gadgets) (where test corresponds to the parameter 'name')
+Output format (see more details below) : nike_shoes.gadgets=(Array containing the gadgets) (where 'nike_shoes' corresponds to the parameter 'name')
 
 Example : xscript.onload=function() {alert(nike_shoes.gadgets)};
 
