@@ -85,9 +85,12 @@ To call it from a script :
 
 	xscript.onload or onreadystatechange --> do what you have to do with the output
 ````
+
 Output format (see more details below) : nike_shoes=(Array containing the gadgets) (where 'nike_shoes' does correspond to the parameter 'name')
+
 ````
-	so to use it you can do :
+	So to use it you can do :
+	
 	xscript.onload=function() {
 		var res=eval('nike_shoes');
 		if (res.length>0) {
@@ -95,7 +98,8 @@ Output format (see more details below) : nike_shoes=(Array containing the gadget
 		}
 	}
 ````
-See example here : http://www.extractwidget.com/nodejs/test/babyliss.html (see API code at the end)
+
+See example here : http://www.extractwidget.com/nodejs/test/babyliss.html (see API code at the end of html file)
 
 	Note : if your regexp does contain "\" and if you pass it through a js var (Example above : $E('\\$|€')) make sure to double it.
 	
