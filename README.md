@@ -85,9 +85,17 @@ To call it from a script :
 
 	xscript.onload or onreadystatechange --> do what you have to do with the output
 ````
-Output format (see more details below) : nike_shoes.gadgets=(Array containing the gadgets) (where 'nike_shoes' does correspond to the parameter 'name')
-
-Example : xscript.onload=function() {alert(nike_shoes.gadgets)};
+Output format (see more details below) : nike_shoes=(Array containing the gadgets) (where 'nike_shoes' does correspond to the parameter 'name')
+````
+	so to use it you can do :
+	xscript.onload=function() {
+		var res=eval('nike_shoes');
+		if (res.length>0) {
+			...
+		}
+	}
+````
+See example here : http://www.extractwidget.com/nodejs/test/babyliss.html (see API code at the end)
 
 	Note : if your regexp does contain "\" and if you pass it through a js var (Example above : $E('\\$|€')) make sure to double it.
 	
@@ -122,5 +130,9 @@ jCore server : http://213.246.53.127:1341/getelements?params
 http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC
 
 You can use the API on jCore server : http://213.246.53.127:1341 (if by any unforeseen reasons the server is down, please advise).
+
+Example of API code and use, retrieve real time the price of babyliss homelight product on different merchant sites :
+
+http://www.extractwidget.com/nodejs/test/babyliss.html (click on "acheter maintenant" then wait for prices to be displayed in green)
 
 See tests.txt in ./test
