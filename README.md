@@ -7,9 +7,9 @@ Node.js implementation of Extract Widget bot using https://github.com/Nais/node-
 
 Real-time extraction of web pages information (html, text, etc) based on given criterias.
 
-It can be used as a server, then parameters are passed in the URL, or directly as an independant node.js module.
+It can be used as a server or an API, then parameters are passed in the URL, or directly as an independant node.js module.
 
-The difference with node-gadgets is that for performances reasons it does not return the full gadgets, only the relevant information (shopbot example : seeking for "nike lebron 9" will return real-time the price of the shoes on nike store web site)
+The difference with node-gadgets is that for performances reasons it does not return the full gadgets, only the relevant information (shopbot example : seeking for "nike lebron 9" will return real-time the price of the shoes on nike store's web site)
 
 ## Install :
 
@@ -24,7 +24,7 @@ or
 Complementary modules :
 	 node-ewa
 	 
-	 Note : node-ewa is not a public module for now, so you can only use node-bot's server mode. 
+	 Note : node-ewa is not a public module for now, so you can only use node-bot's server/API mode. 
 
 ## Use :
 
@@ -48,7 +48,7 @@ Complementary modules :
 
 	getElements(params,response);
 ````
-### As a server :
+### As a server/API :
 	
 ````
 	var http = require('http'),  
@@ -85,13 +85,13 @@ To call it from a script :
 
 	xscript.onload or onreadystatechange --> do what you have to do with the output
 ````
-Output format (see more details below) : nike_shoes.gadgets=(Array containing the gadgets) (where 'nike_shoes' corresponds to the parameter 'name')
+Output format (see more details below) : nike_shoes.gadgets=(Array containing the gadgets) (where 'nike_shoes' does correspond to the parameter 'name')
 
 Example : xscript.onload=function() {alert(nike_shoes.gadgets)};
 
 	Note : if your regexp does contain "\" and if you pass it through a js var (Example above : $E('\\$|€')) make sure to double it.
 	
-	Note2 : make sure the encoding of your files/browsers is utf-8
+	Note2 : make sure that the encoding of your files/browsers is utf-8
 
 ## Parameters :
 
@@ -101,7 +101,7 @@ name : the name that will become the name of the global var containing the outpu
 
 regexp : while building the DOM, node-dom will use that regular expression to detect the objects that you are looking for (example : regexp=\$|€ --> you are looking for gadgets in the page that are related to a price in $ or €)
 
-search : indicates that once the gadgets have been selected with the regexp, you can filter these gadgets based on the value of search (example : "nikestore nike shoes" url can contain other products than shoes, node-bot will return only the results matching "nike shoes")
+search : indicates that once the gadgets have been selected with the regexp, you can filter these gadgets based on the value of search field (example : "nikestore nike shoes" url can contain other products than shoes, node-bot will return only the results matching "nike shoes")
 
 ## Output :
 
@@ -109,14 +109,18 @@ The output is an Array of :
 
 [gadget html,width,height,gadget name,reserved,base,price,html of regexp object]
 
+No json format here for now for historical reasons and backward compatibility with existing projects (TODO later).
+
 The first three parameters in the output are not filled by node-bot.
 
 See https://github.com/Nais/node-gadgets/ documentation for more details.
 	
-## Tests :
+## Tests and API :
 
-Naïs server : http://213.246.53.127:1341/getelements?params
+jCore server : http://213.246.53.127:1341/getelements?params
 
 http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC
+
+You can use the API on jCore server : http://213.246.53.127:1341 (if by any unforeseen reasons the server is down, please advise).
 
 See tests.txt in ./test
