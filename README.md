@@ -136,7 +136,7 @@ See https://github.com/Nais/node-gadgets/ documentation for more details.
 	
 ## Tests and API :
 
-jCore server : http://213.246.53.127:1341/getelements?params
+jCore server (http://www.jcore.fr) : http://213.246.53.127:1341/getelements?params
 
 http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC
 
