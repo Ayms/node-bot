@@ -92,6 +92,13 @@ Output format (see more details below) : nike_shoes=(Array containing the gadget
 	So to use it you can do :
 	
 	xscript.onload=function() {
+		var res=eval('nike_shoes');
+		if (res.length>0) {
+			...
+		}
+		
+		or
+		
 		eval('nike_shoes');
 		if (nike_shoes.length>0) {
 			...
