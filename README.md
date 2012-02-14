@@ -92,14 +92,13 @@ Output format (see more details below) : nike_shoes=(Array containing the gadget
 	So to use it you can do :
 	
 	xscript.onload=function() {
-		var res=eval('nike_shoes');
+		var res=eval('nike_shoes'+this.shoe_number); //for example if the parameter name depends on some var in your code
 		if (res.length>0) {
 			...
 		}
 		
-		or
+		or simply
 		
-		eval('nike_shoes');
 		if (nike_shoes.length>0) {
 			...
 		}
