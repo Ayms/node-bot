@@ -1,7 +1,7 @@
 node-bot
 ===
 
-Node.js implementation of Extract Widget bot using https://github.com/Nais/node-dom/, https://github.com/Nais/node-gadgets/ and https://github.com/Nais/node-googleSearch/
+Node.js implementation of Extract Widget bot using https://github.com/Ayms/node-dom/, https://github.com/Ayms/node-gadgets/ and https://github.com/Ayms/node-googleSearch/
 
 ## Purpose:
 
@@ -17,7 +17,7 @@ The difference with node-gadgets is that for performances reasons it does not re
 
 or
 
-    git clone http://github.com/Nais/node-bot.git
+    git clone http://github.com/Ayms/node-bot.git
     cd node-bot
     npm link .
 	
@@ -131,7 +131,7 @@ No json format here for now for historical reasons and backward compatibility wi
 
 The first three parameters in the output are not filled by node-bot.
 
-See https://github.com/Nais/node-gadgets/ documentation for more details.
+See https://github.com/Ayms/node-gadgets/ documentation for more details.
 	
 ## Tests and API :
 
