@@ -117,7 +117,7 @@ url : the url of the site where you want to extract gadgets from, if absent the 
 
 name : the name that will become the name of the global var containing the output in its 'gadgets' property (example : nike_shoes.gadgets).
 
-regexp : while building the DOM, node-dom will use that regular expression to detect the objects that you are looking for (example : regexp=\$|€ --> you are looking for gadgets in the page that are related to a price in $ or €).
+regexp : while building the DOM, node-dom will use that regular expression to detect the objects that you are looking for (example : regexp=\$|€ --> you are looking for gadgets in the page that are related to a price in $ or €)
 
 search : indicates that once the gadgets have been selected with the regexp, you can filter these gadgets based on the value of search field (example : "nikestore nike shoes" url can contain other products than shoes, node-bot will return only the results matching "nike shoes")
 
