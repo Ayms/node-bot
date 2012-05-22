@@ -167,6 +167,10 @@ http://213.246.53.127:1341/getelements?url=http%3A%2F%2Fstore.nike.com%2Fus%2Fen
 
 You can use the API on jCore server : http://213.246.53.127:1341 (if by any unforeseen reasons the server is down, please advise).
 
+Links above might not return a correct result due to changes on nike store web site, then you can try :
+
+Webble project : http://www.webble.it/mindex5.php (quick test : click on OK, then on first link that appears)
+
 Example of API code and use, retrieve real time the price of babyliss homelight product on different merchant sites :
 
 http://www.extractwidget.com/nodejs/test/babyliss.html (click on "acheter maintenant" then wait for prices to be displayed in green)
