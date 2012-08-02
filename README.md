@@ -152,6 +152,10 @@ No json format here for now for historical reasons and backward compatibility wi
 The first three parameters in the output are not filled by node-bot.
 
 See https://github.com/Ayms/node-gadgets/ documentation for more details.
+
+## Tunnelling with node-Tor :
+
+	TODO
 	
 ## Tests and API :
 

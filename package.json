@@ -2,7 +2,7 @@
   "name": "node-bot",
   "description": "Node.js implementation of Extract Widget bot using node-dom and node-gadgets, retrieves gadgets and elements from a web page matching given criterias",
   "version": "0.1.0",
-  "homepage": "http://www.infonais.fr",
+  "homepage": "http://www.jcore.fr",
   "keywords": [
 		"bot",
 		"gadget",
@@ -32,7 +32,7 @@
           "type": "MIT"
       }
   ],
-  "author": "Aymeric Vitte <aymeric2@infonais.fr> (http://www.infonais.fr)",
+  "author": "Aymeric Vitte <avitte@jcore.fr> (http://www.jcore.fr)",
   "main": "./lib/bot.js",
   "engines": {
     "node": "*"
