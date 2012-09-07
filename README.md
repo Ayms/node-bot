@@ -155,7 +155,9 @@ See https://github.com/Ayms/node-gadgets/ documentation for more details.
 
 ## Tunnelling with node-Tor :
 
-	TODO - watch https://github.com/Ayms/node-Tor
+	TODO
+
+Watch https://github.com/Ayms/node-Tor
 	
 ## Tests and API :
 
