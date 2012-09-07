@@ -86,11 +86,11 @@ Example with encoded parameters to retrieve the price of "lebron9" shoes on nike
 
 with node-googleSearch
 
-http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC
+http://my_server:my_port/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC
 
 without node-googleSearch
 
-http://213.246.53.127:1341/getelements?url=http%3A%2F%2Fstore.nike.com%2Fus%2Fen_us%2F%253Fl%253Dshop%2Cpdp%2Cctr-inline%2Fcid-1%2Fpid-417121%2Fpgid-437002&name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC&nbmax=20
+http://my_server:my_port/getelements?url=http%3A%2F%2Fstore.nike.com%2Fus%2Fen_us%2F%253Fl%253Dshop%2Cpdp%2Cctr-inline%2Fcid-1%2Fpid-417121%2Fpgid-437002&name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC&nbmax=20
 
 To call it from a script :
 
@@ -155,21 +155,21 @@ See https://github.com/Ayms/node-gadgets/ documentation for more details.
 
 ## Tunnelling with node-Tor :
 
-	TODO
+	TODO - watch https://github.com/Ayms/node-Tor
 	
 ## Tests and API :
 
-jCore server (http://www.jcore.fr) : http://213.246.53.127:1341/getelements?params
+jCore server (http://www.jcore.fr) : http://my_server/getelements?params
 
 Example with node-googleSearch :
 
-http://213.246.53.127:1341/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC&nbmax=20
+http://my_server/getelements?name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC&nbmax=20
 
 Example without node-googleSearch :
 
-http://213.246.53.127:1341/getelements?url=http%3A%2F%2Fstore.nike.com%2Fus%2Fen_us%2F%253Fl%253Dshop%2Cpdp%2Cctr-inline%2Fcid-1%2Fpid-417121%2Fpgid-437002&name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC&nbmax=20
+http://my_server/getelements?url=http%3A%2F%2Fstore.nike.com%2Fus%2Fen_us%2F%253Fl%253Dshop%2Cpdp%2Cctr-inline%2Fcid-1%2Fpid-417121%2Fpgid-437002&name=nike_shoes&search=nike%20lebron%209&regexp=%5C%24%7C%C3%A2%E2%80%9A%C2%AC&nbmax=20
 
-You can use the API on jCore server : http://213.246.53.127:1341 (if by any unforeseen reasons the server is down, please advise).
+You can use the API on jCore server : http://my_server (if by any unforeseen reasons the server is down, please advise).
 
 Links above might not return a correct result due to changes on nike store web site, then you can try :
 
